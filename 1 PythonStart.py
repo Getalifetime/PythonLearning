@@ -1,4 +1,5 @@
 from math import sqrt
+from tkinter import Y
 
 ########################################################################################################
 print("Hello Python interpreter")
@@ -98,6 +99,13 @@ greeting = 'Hello'
 print(greeting[0])
 print(greeting[-1])
 
+# 使用del删除：不仅会删除对象引用，还会删除名称本身
+x = ['Hello', 'world']
+y = x
+y[1] = 'python'
+print(x)
+del x
+print(y) # 删除x对y没有任何影响，只是删除名称x
 
 
 

@@ -197,3 +197,9 @@ print(dict_pyweb)
 d = {1:1, 2:2, 3:3, 4:1}
 print('\n#11')
 print(d.values())
+
+
+## 字典推导
+squares = {i:"{} squared is {}".format(i, i**2) for i in range(10)}
+print(squares[5])
+print(squares)

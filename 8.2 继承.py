@@ -28,6 +28,8 @@ class ElectricCar(Car):
         '初始化父类的属性，再初始化子类独有的属性'
         super().__init__(make, model, year)
         self.battery = Battery() #将一个Battery实例用作ElectricCar类的一个属性
+        # 实际上，函数super返回的是一个super对象，这个对象负责为你执行方法解析。
+        # 当访问它的属性时，它将在所有的超类（以及超类的超类等等）中查找，直到找到指定的属性或引发AttributeError异常
         """
         使用代码模拟实物时，你可能会发现自己给类添加的细节越来越多：属性和方法清单以及文件都越来越长。
         在这种情况下，可能需要将类的一部分作为一个独立的类提取出来。

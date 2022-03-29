@@ -165,3 +165,12 @@ for name, info in scientists.items():
 # 在序列中，每个元素都有编号；在映射中，每个元素都有名称（也叫键）
 # 有一种既不是序列也不是映射的容器，就是集合（set）
 
+# 序列解包(或可迭代对象解包)
+# 将一个序列(或任何可迭代对象)解包，并将得到的值存储到一系列变量中
+# 这在使用元组(或其他序列或可迭代对象)的函数或方法时很有用
+x, y, z = 1, 2, 3
+x, y = y, x
+print(x, y, z)
+
+name, item = favorite_languages.popitem() # 将返回的元组解包到两个变量中
+print(name, item)
